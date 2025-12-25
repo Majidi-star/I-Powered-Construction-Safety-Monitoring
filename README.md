@@ -51,7 +51,7 @@ Analysis of the training results from `runs/detect/train`:
 
 | Training Logs (Loss/mAP) | Label Distribution |
 |---|---|
-| ![Results](./assets/results.jpg) | ![Labels](./assets/labels.jpg) |
+| ![Results](./assets/results.png) | ![Labels](./assets/labels.jpg) |
 
 ---
 

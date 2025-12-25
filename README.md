@@ -10,6 +10,17 @@
 ### 🇮🇷 معرفی پروژه (Persian)
 این پروژه یک سیستم بینایی ماشین پیشرفته بر پایه **YOLOv8** است که برای شناسایی خودکار تجهیزات ایمنی (PPE) در محیط‌های کارگاهی طراحی شده است. این مدل قادر است ۱۰ کلاس مختلف از جمله کلاه ایمنی، جلیقه، ماسک و ماشین‌آلات را با دقت بالا شناسایی کند.
 
+---
+
+### 🚀 Model in Action (Test Result) / نمایش عملکرد مدل
+
+| Input Image (Original) | Model Prediction (Inference) |
+|---|---|
+| ![Input](./assets/test_sample_input.jpg) | ![Output](./assets/test_sample_output.jpg) |
+
+> **Note:** The model successfully identifies multiple workers and their safety gear simultaneously with high confidence.
+
+
 #### 📊 تحلیل خروجی‌های مدل
 بر اساس نمودارهای استخراج شده از پوشه `runs/detect/train`:
 
@@ -30,16 +41,6 @@ Analysis of the training results from `runs/detect/train`:
 * **Model Strengths:** According to the **Normalized Confusion Matrix**, the model excels in detecting **Safety Cones (91%)** and **Masks (90%)**.
 * **PR Curve Insights:** High precision-recall scores (>85%) for **Hardhats** and **Vests** ensure reliable safety auditing.
 * **Data Distribution:** As shown in `labels.jpg`, the dataset is rich in **Person** and **Safety Vest** instances, optimizing the model for worker-centric monitoring.
-
----
-
-### 🚀 Model in Action (Test Result) / نمایش عملکرد مدل
-
-| Input Image (Original) | Model Prediction (Inference) |
-|---|---|
-| ![Input](./assets/test_sample_input.jpg) | ![Output](./assets/test_sample_output.jpg) |
-
-> **Note:** The model successfully identifies multiple workers and their safety gear simultaneously with high confidence.
 
 ---
 
